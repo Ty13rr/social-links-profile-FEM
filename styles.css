@@ -1,0 +1,104 @@
+/* EVIRO */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  /* Primary */
+
+  --Green: hsl(75, 94%, 57%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  font-family: "Inter";
+  font-size: 14px;
+  min-height: 100vh;
+  background-color: var(--Off-Black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CARD */
+
+.container {
+  margin: auto;
+  display: inline-flex;
+}
+
+.card {
+  background-color: var(--Dark-Grey);
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  width: 390px;
+  height: 600px;
+  border-radius: 10px;
+
+  img {
+    border-radius: 50%;
+    width: auto;
+    height: 90px;
+    margin-top: 20px;
+  }
+
+  .text {
+    h1 {
+      color: var(--White);
+      font-weight: 600;
+      padding: 20px 0 0 0;
+      font-size: 1.5rem;
+    }
+
+    .london {
+      color: var(--Green);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 12px 0 0 0;
+    }
+
+    .front-end {
+      color: #ffffffdf;
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 30px 0 20px 0;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--White);
+    display: inline-block;
+    flex-direction: column;
+    width: 80%;
+    padding: 15px;
+    background-color: var(--Grey);
+    margin: 10px;
+    border-radius: 5px;
+  }
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--Off-Black);
+  background-color: var(--Green);
+}
+
+@media (max-width: 475px) {
+  .container {
+    margin: auto;
+    max-width: 90%;
+  }
+}
